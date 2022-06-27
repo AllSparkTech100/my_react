@@ -1,3 +1,72 @@
+//images
+
+import React from "react";
+import { arrCollection, objCollection } from "../Photos/images";
+import DATA from "../data1";
+
+// declare image link variable
+const img_url = "https://picsum.photos/200";
+
+const BoxComp = () => {
+    return (
+      <div>
+        <h1>Dealing With Images</h1>
+        <p>No Import</p>
+        <img src="head.jpg" alt="" />
+
+        <p>Using the require function</p>
+        <img src={require("../Photos/logo192.png")} alt="" />
+
+        <p>Using external links</p>
+        <img src={img_url} alt="ext_img" />
+
+        <p>Using array - image as exported constant</p>
+        <img src={arrCollection[0]} alt="" />
+        <img src={arrCollection[1]} alt="" />
+        <img src={arrCollection[2]} alt="" />
+
+        <p>Using exported image constant - object</p>
+        <img src={objCollection.logo1} alt="" />
+        <img src={objCollection.logo3} alt="" />
+        <img src={objCollection.logo2} alt="" />
+
+        <p>Mapping</p>
+        <div>
+            {
+                DATA.map((item) => {
+                    return (
+                      <div key={item.Id} className="">
+
+                        <img src={item.Img_url} alt="" />
+
+                        <p>{item.Caption}</p>
+
+                      </div>
+                    );
+                })
+            }
+        </div>
+
+      </div>
+    );
+}
+
+export default BoxComp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Grid style
 
 
