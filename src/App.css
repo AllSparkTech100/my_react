@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+} 
+
+Routes{
+  color: white;
+  text-decoration: none;
+}
+ 
+ .App {
+  text-align: center;
+  text-decoration: none;
+}

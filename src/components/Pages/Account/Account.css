@@ -1,0 +1,73 @@
+* {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  background-color: yellow;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: 70px 1fr 70px;
+  grid-gap: 3px;
+}
+.grid-container header {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background-color: #fff;
+}
+.grid-container aside {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: grey;
+}
+.grid-container main {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: red;
+}
+.grid-container header {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-container header nav ul {
+  display: flex;
+  list-style: none;
+}
+.grid-container header nav ul li {
+  margin: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+}
+.grid-container header nav ul li:hover {
+  cursor: pointer;
+  color: blue;
+}
+.grid-container aside {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+.grid-container aside .img {
+  border-radius: 10rem;
+  background-color: #fff;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  width: 9rem;
+}
+.grid-container aside .img img {
+  position: relative;
+  top: 0.5rem;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 14rem;
+}
+.grid-container aside h3 {
+  color: blue;
+}
+.grid-container aside p {
+  color: white;
+}/*# sourceMappingURL=Account.css.map */

@@ -1,0 +1,51 @@
+.footer {
+  margin-top: 15rem;
+  text-align: center;
+}
+.footer table {
+  color: black;
+  background-color: #d1d1d1;
+  width: 100%;
+  text-align: center;
+}
+.footer table th {
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer table td {
+  font-size: 1.1rem;
+}
+.footer p {
+  color: black;
+}
+.footer span {
+  color: blue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*@media screen and (max-width:500px) {
+
+    .footer{
+        // width: 10%;
+        background-color: blue;
+
+
+        table{
+            color: black;
+            // background-color: red;
+            background-color: red;
+            width: auto;
+            font-size: .5rem;
+            text-align: center;
+            // text-align: justify;
+
+
+            th{
+                font-size: .6rem;
+                font-weight: normal;
+            }
+        }
+    }   
+}*//*# sourceMappingURL=Footer.css.map */
